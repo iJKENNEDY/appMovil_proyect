@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/principal">
+    <fragment
+        android:id="@+id/principal"
+        android:name="com.src.pruebanavegaciones.Principal"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" >
+        <action
+            android:id="@+id/action_principal_to_tecnicas"
+            app:destination="@id/tecnicas" />
+        <action
+            android:id="@+id/action_principal_to_test"
+            app:destination="@id/test" />
+        <action
+            android:id="@+id/action_principal_to_ayuda"
+            app:destination="@id/ayuda" />
+        <action
+            android:id="@+id/action_principal_to_resultados"
+            app:destination="@id/resultados" />
+    </fragment>
+    <fragment
+        android:id="@+id/test"
+        android:name="com.src.pruebanavegaciones.Test"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/tecnicas"
+        android:name="com.src.pruebanavegaciones.Tecnicas"
+        android:label="fragment_tecnicas"
+        tools:layout="@layout/fragment_tecnicas" />
+    <fragment
+        android:id="@+id/ayuda"
+        android:name="com.src.pruebanavegaciones.Ayuda"
+        android:label="fragment_ayuda"
+        tools:layout="@layout/fragment_ayuda" />
+    <fragment
+        android:id="@+id/resultados"
+        android:name="com.src.pruebanavegaciones.Resultados"
+        android:label="fragment_resultados"
+        tools:layout="@layout/fragment_resultados" />
+    <activity
+        android:id="@+id/login2"
+        android:name="com.src.pruebanavegaciones.Login"
+        android:label="login"
+        tools:layout="@layout/login" />
+</navigation>
