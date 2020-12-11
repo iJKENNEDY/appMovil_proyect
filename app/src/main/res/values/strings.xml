@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestEstres</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_score">Your Score</string>
+    <string name="yugesh_verma">Yugesh Verma</string>
+    <string name="projectworldsofficial_gmail_com">grupo@gmail.com</string>
+    <string name="gajendra_pradhan">Gajendra Pradhan</string>
+    <string name="gajenpradhan18_gmail_com">Gajenpradhan18@gmail.com</string>
+    <string name="quizapp">QuizApp</string>
+</resources>

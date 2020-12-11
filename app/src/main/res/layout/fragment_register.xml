@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.Register">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondoprinicipal"
+        android:orientation="vertical"
+        tools:context=".Register">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/patua_one"
+            android:paddingTop="2dp"
+            android:text="REGISTRATE"
+            android:textStyle="bold"
+            android:textColor="#0E0F27"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/edNombre"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Nombres"
+            android:fontFamily="@font/patua_one"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edApellido"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Apellidos"
+            android:fontFamily="@font/patua_one"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edFecNac"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="@font/patua_one"
+            android:hint="Fecha de Nacimiento"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sexo"
+            android:fontFamily="@font/patua_one"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/rbSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/patua_one"
+                android:text="Femenino"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rbMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Masculino"
+                android:fontFamily="@font/patua_one"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edCorreo"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:fontFamily="@font/patua_one"
+            android:hint="Correo Electronico"
+            android:inputType="textPersonName"  />
+
+        <EditText
+            android:id="@+id/edTelefono"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Telefono"
+            android:fontFamily="@font/patua_one"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edDistrito"
+            android:fontFamily="@font/patua_one"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Distrito"
+            android:inputType="textPersonName"  />
+
+        <EditText
+            android:id="@+id/edContras"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/edReContra"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Repetir Contraseña"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnRegistrarse"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#30201D"
+            android:layout_marginTop="10dp"
+            android:text="Registrarse"
+            android:textColor="@color/green"
+            android:textColorHighlight="#FFEB3B"
+            android:fontFamily="@font/patua_one"
+            android:textColorHint="#FDB444"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRegistrarse"
+            android:layout_marginTop="11dp"
+            android:layout_gravity="center"
+            android:background="#484C47"
+            android:text=" Cancelar"
+            android:fontFamily="@font/patua_one"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

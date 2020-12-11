@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.Login">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondoprinicipal"
+        android:orientation="vertical"
+        tools:context=".Login"
+        >
+
+        <ImageView
+            android:layout_width="243dp"
+            android:layout_height="223dp"
+            android:layout_marginTop="54dp"
+            android:layout_gravity="center"
+            android:src="@drawable/usuario">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="12dp"
+            android:textColor="#241D60"
+            android:fontFamily="@font/patua_one"
+            android:text="Usuario"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_width="324dp"
+            android:layout_marginLeft="14dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textUsuario"
+            android:layout_alignEnd="@+id/textUsuario"
+            android:layout_alignRight="@+id/textUsuario"
+            android:ems="10"
+            android:hint="usuario123@gmail.com"
+            android:fontFamily="@font/patua_one"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textContra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUsuario"
+            android:layout_alignEnd="@+id/etUsuario"
+            android:layout_alignRight="@+id/etUsuario"
+            android:layout_marginLeft="12dp"
+            android:textColor="#0C1188"
+            android:ems="10"
+            android:fontFamily="@font/patua_one"
+            android:text="Contraseña"
+            android:textSize="30sp" />
+        <EditText
+            android:id="@+id/etContra"
+            android:layout_width="324dp"
+            android:layout_marginLeft="14dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textContra"
+            android:layout_alignEnd="@+id/textContra"
+            android:layout_alignRight="@+id/textContra"
+            android:fontFamily="@font/patua_one"
+            android:ems="10"
+            android:hint="**********"
+            android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etContra"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:background="#DF0C4F"
+            android:text="INICIAR SESIÓN"
+            android:textColor="#121107"
+            android:textColorHighlight="#FFEB3B"
+            android:textSize="20sp"
+            android:fontFamily="@font/patua_one"
+            android:layout_marginBottom="11dp"
+            />
+
+        <Button
+            android:id="@+id/btnRegistrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/btnLogin"
+            android:layout_gravity="center"
+            android:background="#4B0D61"
+            android:fontFamily="@font/patua_one"
+            android:text=" REGISTRARSE "
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
